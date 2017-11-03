@@ -2,7 +2,6 @@
 html {
   font-size: 18px;
 }
-
 body {
   font-family: Helvetica;
 }
@@ -30,6 +29,7 @@ header .topbar {
   margin: 0rem auto 0rem auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   top: 1rem;
 }
@@ -50,6 +50,9 @@ header .topbar span a {
   padding: 1rem;
   font-size: 1rem;
   text-decoration: none;
+}
+.mobilemenu {
+  display: none;
 }
 .tagline {
   display: flex;
@@ -97,7 +100,7 @@ header h1 {
 }
 .philosophyappt .description {
   width: 35%;
-  margin: 2.5%;
+  margin: 0% 2.5%;
 }
 .philosophyappt .description h2 {
   background-color: cadetblue;
@@ -120,4 +123,88 @@ header h1 {
 }
 .footer h2 {
   color: black;
+}
+/*tablet view*/
+@media only screen and (max-width: 1024px) {
+  .sitecontainer {
+    max-width: 100%;
+    margin: 0;
+  }
+  header .topbar {
+    top: 0rem;
+  }
+  header {
+    height: 22rem;
+  }
+  header h1 {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+/*mobile view*/
+@media only screen and (max-width: 480px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+  p {
+    font-size: 0.77rem;
+  }
+  header h1 {
+    padding: 1rem 0rem;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    margin: 9rem 0rem 0rem 0rem;
+    display: block;
+  }
+  header .topbar span a {
+    display: none;
+  }
+  .mobilemenu {
+    display: block;
+  }
+  .mobilemenu a{
+    color: white;
+    text-decoration: none;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .service {
+    margin: 0.77rem 0rem;
+  }
+  .serviceimg {
+    height: auto;
+  }
+  .service p {
+    text-align: center;
+  }
+  .philosophyappt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .philosophyappt .description {
+    width: 100%;
+    margin: 0rem 0rem 4rem 0rem;
+  }
+  .philosophyappt .description h2 {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+  .philosophyappt .description p {
+    padding: 0rem 0.5rem;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer h2 {
+    display: none;
+  }
 }
