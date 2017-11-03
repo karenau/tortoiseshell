@@ -1,0 +1,123 @@
+/*universal styling*/
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+}
+h2 {
+  font-size: 1rem;
+  color: white;
+}
+.sitecontainer {
+  max-width: 960px;
+  margin: auto;
+}
+/*header*/
+header {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  width: auto;
+  margin: 0rem auto;
+}
+header .topbar {
+  background-color: cadetblue;
+  padding: 1rem 2rem;
+  margin: 0rem auto 0rem auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 1rem;
+}
+header .topbar .logo {
+  display: flex;
+  align-items: center;
+}
+header .topbar .logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+header .topbar nav {
+  display: flex;
+  align-items: center;
+}
+header .topbar span a {
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.tagline {
+  display: flex;
+  justify-content: flex-end;
+}
+header h1 {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+/*services*/
+.services {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0rem;
+}
+.service {
+  width: 5rem;
+  padding: 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.serviceimg {
+  height: 5.5rem;
+}
+.service img {
+  width: 3.5rem;
+  display: flex;
+  margin: 0 auto;
+}
+.service p {
+  text-align: center;
+}
+/*philosophy and appointments*/
+.philosophyappt {
+  display: flex;
+  justify-content: center;
+}
+.philosophyappt .description {
+  width: 35%;
+  margin: 2.5%;
+}
+.philosophyappt .description h2 {
+  background-color: cadetblue;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+/*footer*/
+.footer {
+  background-color: azure;
+  margin-top: 5rem;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+}
+.footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+.footer h2 {
+  color: black;
+}
